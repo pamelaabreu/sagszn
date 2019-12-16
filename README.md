@@ -1,4 +1,4 @@
-## SAGSZN - a [website](https://sagszn-fav.web.app/) dedicated to my good friend SAG friend 💖
+## SAGSZN - a [website](https://sagszn-fav.web.app/) dedicated to my good SAG friend 💖
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
