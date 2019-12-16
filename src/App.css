@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --electric-blue: #0084ff;
+  --plaster: #ebe9e9;
+  --electric-pink: #fa5cfa;
+  --yellow-sun: #f6b02d;
+}
+
+.plasterColor {
+  color: var(--plaster);
+}
+
+.pinkBG {
+  background-color: var(--electric-pink);
+}
+
+.app {
+  background: var(--electric-blue);
+  position: relative;
+}
+
+.card-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+  background-color: var(--yellow-sun);
+  color: var(--plaster);
+  border-radius: 5px;
+}
+
+.box:nth-child(even) {
+  background-color: var(--plaster);
+  color: var(--electric-pink);
+}
+
+.card-0 {
+  color: var(--electric-pink);
+}
+
+.card-1 {
+  color: var(--plaster);
+}
+
+.made-by {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 10px;
+  padding: 15px;
+  margin: 0;
+  background: var(--electric-pink);
+  color: var(--plaster);
+  border-radius: 50px;
+}
+
+.logo-container {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: var(--electric-blue);
+  border-radius: 50%;
+  padding: 20px;
+  z-index: 50;
+}
+
+.logo {
+  animation: jobest-logo-color infinite 1s ease;
+  font-weight: bold;
+  color: var(--electric-pink);
+  text-shadow: -2px 2px var(--electric-pink);
+  pointer-events: none;
+}
+
+@keyframes jobest-logo-color {
+  0% {
+    color: var(--plaster);
+  }
+  50% {
+    color: var(--yellow-sun);
+  }
+  100% {
+    color: var(--plaster);
+  }
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* @media (min-width: 300px){
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
